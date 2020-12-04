@@ -1,10 +1,5 @@
 
 /* 영상삽입 */
-html, body{
-    background-color: peru;
-}
-
-
 .movie_box{
 	position: absolute;
     width: 80px;
