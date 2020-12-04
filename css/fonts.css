@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Canter';
+    src: url('fonts/Canter-Bold.eot');
+    src: url('fonts/Canter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Canter-Bold.woff2') format('woff2'),
+        url('fonts/Canter-Bold.woff') format('woff'),
+        url('fonts/Canter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,221 @@
+
+/* 영상삽입 */
+
+
+
+.movie_box{
+	position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 40%;
+    left: 50%;
+    margin-left: -40px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgba(253,209,168,0.5);
+    box-shadow: 1px 1px 2px 2px black;
+    cursor: pointer;
+    z-index: 9999;
+}
+.movie_icon{
+	position: absolute;
+	width: 0px;
+    height: 0px;
+    border-top: 40px solid transparent;
+    border-right: 40px solid rgb(255, 50, 50);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+    transform: rotate(-45deg);
+    top: 20px;
+    left: 10px;
+    z-index: 9999;
+}
+
+.showbox{
+    position: absolute;
+    outline: 10px black solid;
+    width: 560px;
+    height: 315px;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    margin-top: -157.5px;
+    margin-left: -280px;
+    border-radius: 10px;
+    
+}
+
+/* 메인 시작 */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #f9e2cf;
+}
+section#wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.bo{
+    border: 1px red solid;
+}
+
+/*배경 백그라운드 이미지*/
+.intro{
+    width: 100%;
+    height: 100%;
+    background: url(background/intro/intro.png) top center/cover no-repeat;
+    position: absolute;
+    top: 0px;
+}
+
+/*네비게이션 시작*/
+/*상단 네비*/
+#wrapper>nav{
+    width: 100%;
+    height: 113px;
+    position: absolute;
+    z-index: 99999;
+}
+#wrapper>nav ul{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 10%;
+}
+#wrapper>nav li{
+    width: 15%;
+    height: 100%;
+    margin: 0 10px;
+    list-style: none;
+    position: relative;
+}
+#wrapper>nav li:nth-of-type(1){
+    width: 5%;
+    margin-right: 70px;
+}
+#wrapper>nav li:nth-of-type(3){
+    margin-left: 30px;
+}
+#wrapper>nav li:nth-of-type(4){
+    margin-left: 40px;
+}
+#wrapper>nav li a{
+    text-indent: -9999px;
+}
+
+
+/*네비 상세
+매뉴 및 이미지*/
+#wrapper>nav li:nth-of-type(1) a{
+    display: block;
+    background: url(contents/navi/main_logo.png) center/contain no-repeat;
+    width: 100%;
+    min-width: 70px;
+    height: 100%;
+}
+#wrapper>nav li:nth-of-type(2) a{
+    display: block;
+    background: url(contents/navi/lnb_brand.png) left/contain no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 10px;
+}
+#wrapper>nav li:nth-of-type(3) a{
+    display: block;
+    background: url(contents/navi/lnb_product.png) left/contain no-repeat;
+    width: 100%;
+    height: 100%;			
+}
+#wrapper>nav li:nth-of-type(4) a{
+    display: block;
+    background: url(contents/navi/lnb_community.png) left/contain no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 10px;	
+}
+/*네비 후버*/
+#wrapper>nav li:nth-of-type(2) a:hover{
+    background: url(contents/navi/lnb_hover_brand.png) left/contain no-repeat;
+}
+#wrapper>nav li:nth-of-type(3) a:hover{
+    background: url(contents/navi/lnb_hover_product.png) left/contain no-repeat;
+}
+#wrapper>nav li:nth-of-type(4) a:hover{
+    background: url(contents/navi/lnb_hover_community.png) left/contain no-repeat;
+}
+
+/*네비 후버시 애니*/
+#wrapper .ani_box{
+    width: calc(0.7*113.41px);
+    height: calc(0.7*113.41px);
+    position: absolute;
+    bottom: 18px;
+    z-index: -1;
+}
+/*네비 아이콘 1번*/
+div.ani{
+    width: calc(0.7*113.41px);
+    height: calc(0.7*113.41px);
+    position: absolute;
+    background: url(contents/navi/lnb_hover_navi1.png) left/cover no-repeat;
+    left: -10px;
+    
+}
+#wrapper>nav li:nth-of-type(2):hover .ani{
+    width: calc(0.7*113.41px);
+    height: calc(0.7*113.41px);
+    position: absolute;
+    background: url(contents/navi/lnb_hover_navi1.png) left/cover no-repeat;
+    animation: ani 1s steps(12) infinite;
+}
+
+/*네비 아이콘 2번*/
+div.ani2{
+    width: calc(0.7*113.41px);
+    height: calc(0.7*113.41px);
+    position: absolute;
+    background: url(contents/navi/lnb_hover_navi2.png) left/cover no-repeat;
+    left: -40px;
+}
+#wrapper>nav li:nth-of-type(3):hover .ani2{
+    width: calc(0.7*113.41px);
+    height: calc(0.7*113.41px);
+    position: absolute;
+    background: url(contents/navi/lnb_hover_navi2.png) left/cover no-repeat;
+    animation: ani 1s steps(12) infinite;
+}
+/*네비 아이콘 3번*/
+div.ani3{
+    width: calc(0.7*113.41px);
+    height: calc(0.7*113.41px);
+    position: absolute;
+    background: url(contents/navi/lnb_hover_navi3.png) left/cover no-repeat;
+    left: -60px;
+}
+#wrapper>nav li:nth-of-type(4):hover .ani3{
+    width: calc(0.7*113.41px);
+    height: calc(0.7*113.41px);
+    position: absolute;
+    background: url(contents/navi/lnb_hover_navi3.png) left/cover no-repeat;
+    animation: ani 1s steps(12) infinite;
+}
+/*네비 아이콘 애니 공통*/
+@keyframes ani{
+    0%{}
+    100%{
+        background-position: calc(0.7*-1361px);
+    }
+}
+/*네비게이션 종료*/

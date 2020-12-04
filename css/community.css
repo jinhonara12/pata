@@ -1,0 +1,388 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bo{
+    border:5px red solid;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+/*백그라운드 이미지 삽입*/
+#wrapper>section.community{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+section.community>div.community_main{
+    width: 100%;
+    height: 100%;
+    background: url(background/community/community_main1.jpg) center bottom/cover no-repeat;
+}
+/*section.community>div.community_insta{
+    width: 100%;
+    height: 50%;
+    background: tomato;
+}*/
+/*백그라운드 배경 끝*/
+
+/*설문조사 페이지*/
+.survey_page{
+    width: 100%;
+    height: 100%;
+    /*border:5px red solid;*/
+    position: absolute;
+    background: black;
+    opacity: 0.95;
+}
+.survey_page>.survey_box{
+    width: 40%;
+    min-width: 480px;
+    height: 829px;
+    left: 30%;
+    top: 50px;
+    position: absolute;
+    border-radius: 10px;
+    background: #859b40;
+    box-shadow: 1px 1px 2px black inset;
+    /*border: 1px red solid;*/
+}
+.survey_box h1{
+    font-family: do hyeon;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 4px 0 #162A08;
+    font-size: 50px;
+}
+.survey_box span{
+    position: absolute;
+    top: 105px;
+    right: 10px;
+    /*border:1px red solid;*/
+    font-family: Vision;
+    color: white;
+}
+.survey_box span#sub{
+    display: block;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 135px;
+    font-family : nanumgothic;
+}
+
+.survey_box .close{
+    /*width: 50px;
+    height: 50px;*/
+    /*border:1px red solid;*/
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.survey_box .close:hover{
+    color: #36531E;
+}
+.survey_page>.survey_box>.survey{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    border-top :2px #36531E solid;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px black inset;
+}
+.survey>ul{
+    width: 100%;
+    height: 100%;
+    background: #859b40;
+    position: absolute;
+    overflow:hidden;
+    box-shadow: 1px 1px 2px black inset;
+    /*border:1px red solid;*/
+}
+.survey>ul li{
+    margin-top: 15px;
+    width: 90%;
+    left: 5%;
+    height: 14%;
+    position: relative;
+    background: #CDB354;
+    /* border:1px red solid; */
+    display: flex;
+    list-style: none;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    /* cursor: pointer; */
+}
+.survey>ul li:nth-child(6){
+    margin-top: 10px;
+    background: none;			
+}
+.survey>ul li h3{
+    position: absolute;
+    font-family: Noto Sans KR;
+    left:53px;
+}
+li>.next{
+    font-family: nanumgothic;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 50px;
+    /*border:1px red solid;*/
+    line-height: 50px;
+    text-align: center;
+    background: #CDB354;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+li>.next:hover{
+    background: #36531E;
+    /*box-sizing: border-box;*/
+}
+
+/*설문지 체크박스*/
+.button{
+    /*border:5px red solid;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.check_box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*border: 5px blue solid;*/
+}
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]:checked +label{
+    color:#68854b;
+    opacity: 1;
+    background: url(contents/community/community_checkbox.png) center/contain no-repeat;
+    animation: jelly 0.6s ease;
+}
+@keyframes jelly{
+    from{transform: scale(1,1);}
+    30%{transform: scale(1.25,0.75);}
+    40%{transform: scale(0.75,1.25);}
+    50%{transform: scale(1.15,0.85);}
+    65%{transform: scale(0.95,1.05);}
+    75%{transform: scale(1.05,0.95);}
+    to{transform: scale(1,1);}
+}
+.button_common{
+    font-size: 30px;
+    height: 30px;
+    /*border: 1px red solid;*/
+    color: white;
+    animation: hang 1s infinite ease;
+}
+@keyframes hang{
+    from{transform: rotate(0deg); }
+    30%{transform: rotate(5deg);}
+    40%{transform: rotate(-5deg);}
+    50%{transform: rotate(10deg);}
+    65%{transform: rotate(-10deg);}
+    75%{transform: rotate(3deg);}
+    85%{transform: rotate(-3deg);}
+    to{transform: rotate(0deg); }
+}
+
+/*버튼 위치 조정*/
+label{
+    position: absolute;
+    display: flex;
+    left: 7%;
+    cursor: pointer;
+}
+label[for=check1]{
+    top: 47px;
+}
+label[for=check2]{
+    top: 155px;
+}
+label[for=check3]{
+    top: 262px;
+}
+label[for=check4]{
+    top: 370px;
+}
+label[for=check5]{
+    top: 477px;
+}
+div.button>div.start{
+/*	border:1px red solid;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+div.button>div.start h1{
+/*	border: 1px red solid;*/
+    color: white;
+    font-size: 50px;
+    font-family: nanumgothic;
+    position: absolute;
+    text-align: center;
+    top: 180px;
+    left: 50%;
+    margin-left: -200px;
+    text-shadow: 4px 4px 3px gray;
+}
+.start_button{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background: white;
+    border-radius: 10px;
+    top: 320px;
+    left: 50%;
+    margin-left: -75px;
+    cursor: pointer;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: 4px 4px 3px gray;
+}
+.start_button>span{
+/*	border: 1px red solid;*/
+    color: darkgray;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: Do hyeon;
+    text-align: center;
+    line-height: 50px;
+}
+/*설문지 박스 종료*/
+
+/*설문지 종료 후 나오는 캐릭터 박스 시작*/
+/*캐릭터 박스*/
+.cha_box{
+    /*border: 1px red solid;*/
+    position: absolute;
+    background: rgba(83,170,130,0.9);
+    width: 25%;
+    min-width: 432px; 
+    height: 650px;
+    left: 37.5%;
+    top: 10%;
+    border-radius: 30px;
+}
+.cha_box>ul{
+    border: 5px white double;
+    background: #B8F2D7;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 6%;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.cha_box>ul>li{
+    /*border:1px blue solid;*/
+    position: absolute;
+    width: 100%;
+    list-style: none;
+}
+.cha_box>ul>h2{
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    font-family: do hyeon;
+    font-size: 40px;
+    /*border:1px red solid;*/
+    color: white;
+    text-shadow: 2px 2px 2px #54AA82;
+}
+.cha_box>ul>li:nth-of-type(1){
+    top: 50px;
+    height: calc(4/5*400px);
+    width: calc(4/5*300px);
+    left: 105px;
+    /*background: url();*/
+    /*border:1px red solid;*/
+    animation: ani 1s steps(8) infinite;
+    transition: 1s;
+}
+@keyframes ani{
+    0%{}
+    100%{
+        background-position: calc(4/5*-2400px);
+    }
+}
+.cha_box>ul>li:nth-of-type(2){
+    top: 63%;
+}
+.cha_box>ul>li:nth-of-type(2) h3{
+    text-align: center;
+    font-family: do hyeon;
+    font-size: 30px;
+    color: #1D4C36
+}
+.cha_box>ul>li:nth-of-type(2) span{
+    width: 100%;
+    display: inline-block;
+    text-align: center;	
+    font-family: Noto Sans KR;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.cha_box>ul>li:nth-of-type(3){
+    top: 90%;
+    height: 10%;
+}
+.cha_box>ul>li:nth-of-type(3) .social{
+    width: 100%;
+    height: 100%;
+}
+.cha_box>ul>li:nth-of-type(3) .social li{
+    /*border: 1px  red solid;*/
+    position: relative;
+    left: 32%;
+    list-style: none;
+    float: left;
+    margin: 10px 10px 0 10px;
+}
+.cha_box>ul>li:nth-of-type(3) .social li i{
+    transition: 0.5s;
+    color: #1D4C36;
+    cursor: pointer;
+    font-size: 30px;
+}
+.cha_box>ul>li:nth-of-type(3) .social li i:hover{
+    color : #89C4A1;
+}
+.cha_box .close{
+    position: absolute;
+    /*border : 1px red solid;*/
+    right: 0px;
+    font-size: 25px;
+    top: -36px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cha_box .close:hover{
+    color: #1D4C36
+}
