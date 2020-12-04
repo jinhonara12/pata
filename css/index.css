@@ -1,6 +1,8 @@
 
 /* 영상삽입 */
-
+html, body{
+    background-color: peru;
+}
 
 
 .movie_box{
